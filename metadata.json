@@ -1,0 +1,6 @@
+{
+  "name": "EcoMind — AI-Powered IoT Smart Energy Management System",
+  "description": "Commercial-grade AI energy intelligence platform with ESP32 IoT monitoring, sustainable consumption optimization, anomaly detection, and remote load control.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
