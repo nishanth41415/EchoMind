@@ -100,7 +100,14 @@ Answer the user's question clearly, concisely, and practically with helpful ener
 async function startServer() {
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
-      server: { middlewareMode: true },
+      server: {
+        middlewareMode: true,
+        // Hosted previews proxy HTTP but do not expose Vite's HMR WebSocket.
+        // Disable HMR here as well as in vite.config.ts because this custom
+        // middleware server supplies its own Vite configuration object.
+        hmr: false,
+        watch: null,
+      },
       appType: 'spa',
     });
     app.use(vite.middlewares);
