@@ -20,7 +20,7 @@ export default function EcoMindPrototype() {
   const [page, setPage] = useState<Page>('dashboard');
   const [collapsed, setCollapsed] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(false);
   const [relay, setRelay] = useState(true);
   const [confirmRelay, setConfirmRelay] = useState(false);
   const [notice, setNotice] = useState('');
